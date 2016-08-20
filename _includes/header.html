@@ -1,13 +1,16 @@
+
+<!-- 首页第一行 -->
 <header class="header">
     <div class="navigation">
-        <a href="/" class="logo">{{ site.title }}</a>
-
+    <!-- 第一行大标题 -->
+        <a href="/" class="logo">Wincake</a>
+<!-- 子标题 -->
         <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">关于</a></li>
+            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">博客</a></li>
         </ul>
     </div>
-
+<!-- 右侧的微博什么的 -->
     <ul class="social-links">
         {% if site.author.github %}
             <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
